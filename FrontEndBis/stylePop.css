@@ -1,0 +1,95 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    /*position: fixed;
+    top: 0;
+    left: 0; */
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  
+  .modal-content {
+    width: 84%;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-sections {
+    display: flex;
+    gap: 10%;
+  }
+  
+  .section {
+    padding: 10px;
+  }
+  
+  .gallery-section {
+    width: 50%;
+  }
+  
+  .add-photo-section {
+    width: 30%;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 46%;
+  }
+  
+  .gallery-item {
+    position: relative;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .upload-area {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  

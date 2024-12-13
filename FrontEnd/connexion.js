@@ -51,10 +51,10 @@ formulaire.addEventListener("submit", async function(event) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({email: emel, password: passwd })
     }); 
-    userLogin = await user.json(); // Parse JSON
+    //*userLogin = await user.json(); // Parse JSON
 
     //userLogin = JSON.stringify(userData); // Transformation des user en JSON
-    userAdmin = JSON.parse(window.localStorage.getItem("user"));
+    //userAdmin = JSON.parse(window.localStorage.getItem("user")); 
 
     console.log("Valeurs de Token Admin/Login"); 
     console.log(userAdmin.token); console.log(userLogin.token); 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie et Ajout de Photos</title>
+  <link rel="stylesheet" href="stylePop.css">
+</head>
+<body>
+  <header>
+    <h1>Galerie Photo</h1>
+  </header>
+  <main class="image-grid">
+    <!-- Exemple de 9 images -->
+    <div class="grid-item">Image 1</div>
+    <div class="grid-item">Image 2</div>
+    <div class="grid-item">Image 3</div>
+    <div class="grid-item">Image 4</div>
+    <!-- Ajoutez des images dynamiquement si besoin -->
+  </main>
+  
+  <!-- Fenêtre Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-sections">
+        <!-- Section gauche : Galerie Photo -->
+        <div class="section gallery-section">
+          <h2>Galerie Photo</h2>
+          <div class="gallery-grid">
+            <!-- Exemple d'images -->
+            <div class="gallery-item">
+              <img src="image1.jpg" alt="Image 1">
+              <button class="delete-btn">🗑️</button>
+            </div>
+            <!-- Ajoutez des images dynamiquement ici -->
+          </div>
+        </div> <!-- Fin: Section gauche : Galerie Photo -->
+        
+        <!-- Section droite : Ajout Photo -->
+        <div class="section add-photo-section">
+          <h2>Ajout Photo</h2>
+          <div class="upload-area">
+            <button class="upload-btn">🖼️ + Ajout photo</button>
+            <p>jpg, png: 4mo max</p>
+          </div>
+          <form>
+            <label for="title">Titre</label>
+            <input type="text" id="title" name="title">
+            
+            <label for="category">Catégorie</label>
+            <select id="category" name="category">
+              <option value="cat1">Catégorie 1</option>
+              <option value="cat2">Catégorie 2</option>
+            </select>
+          </form>
+        </div> <!-- Fin:Section droite : Ajout Photo -->
+      </div> <!-- Fin: Section Modal -->
+    </div> <!-- Fin: Bouton CloseS Modal -->
+  </div> <!-- Fin : Fenêtre Modal -->
+  
+  <script src="scriptPop.js"></script>
+</body>
+</html>
